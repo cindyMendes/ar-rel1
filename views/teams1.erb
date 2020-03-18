@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <form action="/show_team" method="post"> 
+            <p> Teams: </p>
+            <% @teams.each do |i| %>
+                <p> <%= i.name %> </p>
+            <% end %>
+            
+            <br/>
+            
+            <label for="teamname"> Team Name: </label>
+            <input type="text" name="name" id="teamname">
+            <input type="submit" value="Show" >
+        </form>
+    
+    </body>
+</html>

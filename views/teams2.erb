@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <% @teams.each do |i| %>
+            <% @link = "/team/#{i.id}" %>
+            <p> <%= i.name %> <a href="<%= @link %>"> Show information </a> </p>
+        <% end %>
+    </body>
+</html>

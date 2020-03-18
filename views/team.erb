@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p> Name: </p>
+        <%= @team.name %>
+        <br/><br/>
+        
+        <p> Notes: </p>
+        <%= @team.notes %>
+        <br/><br/>
+        
+        <p> Members: </p> 
+        <% @team.users.each do |i| %>
+            <p> <%= i.name %> </p>
+        <% end %> 
+        
+    
+    </body>
+</html>
